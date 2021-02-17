@@ -1,24 +1,53 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| column             | Type       | options                   |
+| ------------------ | ---------- | ------------------------- |
+| name               | string     | null: false               |
+| email              | string     | null: false, unique: true |
+| encrypted_password | string     | null: false               |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :rooms, through: :user_rooms
+- has_many :user_rooms
+- has_many :messages
 
-* Configuration
+## rooms　テーブル
 
-* Database creation
+| column                  | Type       | options                        |
+| ----------------------- | ---------- | ------------------------------ |
+| room_name               | string     | null: false                    |
+| user                    | reference  | null: false, foreign_key: true |
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- has_many :user_rooms
+- has_many :users, through: :user_rooms
+- has_many :messages
 
-* Services (job queues, cache servers, search engines, etc.)
+## user_rooms テーブル
 
-* Deployment instructions
+ column                   | Type       | options                        |
+| ----------------------- | ---------- | ------------------------------ |
+| room                    | reference  | null: false, foreign_key: true |
+| user                    | reference  | null: false, foreign_key: true |
 
-* ...
+### Association
+
+- belongs_to :user
+- belongs_to :room
+
+## Messages テーブル
+
+ column                   | Type       | options                        |
+| ----------------------- | ---------- | ------------------------------ |
+| room                    | reference  | null: false, foreign_key: true |
+| user                    | reference  | null: false, foreign_key: true |
+| message                 | text       | null: false                    |
+
+### Association
+
+- belongs_to :user
+- belongs_to :room
