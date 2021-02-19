@@ -4,6 +4,7 @@
       <h2>Create Account</h2>
       <h5>新規アカウントの作成</h5>
       <h3><span>Rindoku</span>へようこそ！</h3>
+      <h3><%= link_to 'ログイン', user_session_path %>はこちら！</h3>
     </div>
     <div class='account-page__inner--right user-form'>
       <%= form_with model: resource, as: resource_name, url: registration_path(resource_name), local: true do |f|%>
