@@ -23,7 +23,7 @@
 
 .logout {
   text-decoration: none;
-  color: #333333;
+  color:skyblue;
 }
 
 .login {
@@ -36,4 +36,9 @@
 .sign-up {
   text-decoration: none;
   color: #333333;
+}
+
+.new-group {
+    text-decoration: none;
+    color: skyblue;
 }
