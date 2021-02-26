@@ -9,7 +9,7 @@
        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"  %> </li>
         <ul class = 'header-right'>
           <li><%= link_to '新規グループを作成する', new_room_path, class: "new-group"%>
-          <li><%= link_to 'メッセージ一覧を見る', "#", class: "new-group"%>
+          <li><%= link_to 'メッセージ一覧を見る', messages_path, class: "new-group"%>
        
       <% else %>
       <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
