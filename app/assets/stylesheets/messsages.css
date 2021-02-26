@@ -10,11 +10,85 @@
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.user-name a{
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.user-name a:link {
+  color: #ebfffa;
+}
+
+.user-name a:visited {
+  color: #ebfffa;
+}
+
+.user-name a:hover {
+  color:#ff0099 ;
+}
+
+.user-name a:active {
+  color: violet;
+}
+
+.create-room a {
+  font-size: 16px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.create-room a:link {
+  color: #ebfffa;
+}
+
+.create-room a:visited {
+  color: #ebfffa;
+}
+
+.create-room a:hover {
+  color:#ff0099 ;
+}
+
+.create-room a:active {
+  color: violet;
+}
+
 .rooms {
   background-color: #002846;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: #ebfffa;
+}
+
+.room-name a:link {
+  color: #ebfffa;
+}
+
+.room-name a:visited {
+  color: #ebfffa;
+}
+
+.room-name a:hover {
+  color:#FF0099;
+  text-decoration:underline;
+}
+
+.room-name a:active {
+  color:violet;
 }
 
 .chat {

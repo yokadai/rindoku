@@ -13,12 +13,27 @@
   list-style: none;
 }
 
-.user-nickname {
+.user-name {
   text-decoration: none;
-  margin-right: 3vw;
-  color: #333333;
-  font-weight: bold;
+  color: skyblue;
 }
+
+a:link {
+  color:brown;
+  }
+  
+  a:visited {
+  color:brown;
+  }
+  
+  a:hover {
+  color:#FF0099;
+  text-decoration:underline;
+  }
+  
+  a:active {
+  color:violet;
+  }
 
 
 .logout {

@@ -1,5 +1,18 @@
 <div class="side-bar-header">
+  <div class="user-name">
+    <%= link_to current_user.name, '#' %>
+  </div>
+  <div class="create-room">
+    <%= link_to 'グループを作成する', new_room_path %>
+  </div>
 </div>
 
 <div class="rooms">
+  <% current_user.rooms.each do |room| %>
+    <div class="room">
+      <div class="room-name">
+        <a href="#"><%= room.room_name %></a>
+      </div>
+    </div>
+  <% end %>
 </div>
