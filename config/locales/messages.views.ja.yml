@@ -1,0 +1,13 @@
+ja:
+  activerecord:
+    errors:
+      models:
+        message:
+          attributes:
+            message:
+              blank: "が空になっています"
+            room:
+              required: "が存在しません"
+            user:
+              required: "が存在しません"
+              
