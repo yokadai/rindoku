@@ -12,6 +12,6 @@ RSpec.describe Room, type: :model do
   it "ルーム名が存在しなければルーム作成できないこと" do
     @room.room_name = ""
     @room.valid?
-    expect(@room.errors.full_messages).to include("Room name can't be blank")
+    expect(@room.errors.full_messages).to include("Room name が空になっています")
   end
 end
