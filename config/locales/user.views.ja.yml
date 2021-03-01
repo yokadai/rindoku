@@ -1,0 +1,17 @@
+ja:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "が空になっています"
+            email:
+              blank: "が空になっています"
+              taken: "はすでに使用されています"
+            password:
+              blank: "が空になっています"
+              too_short: "は６文字以上入力してください"
+              invalid: "は半角英数字のみで、組み合わせて記入してください"
+            password_confirmation:
+              confirmation: "が一致しません"

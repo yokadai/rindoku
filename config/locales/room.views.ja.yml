@@ -1,0 +1,8 @@
+ja:
+  activerecord:
+    errors:
+      models:
+        room:
+          attributes:
+            room_name:
+              blank: "が空になっています"
