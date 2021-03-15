@@ -8,6 +8,7 @@ a {
 
 .title-contents {
   width: 100vw;
+  height: 100vh;
   background-image: image-url('top_background.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,20 +16,26 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
   padding: 5vh 15vw;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  position: relative;
 }
 
 .service-title {
   font-size: 8vh;
   color:rgb(164, 219, 240);
+  position: absolute;
+  top:0px;
+  left:20px;
 }
 
 .service-explain {
   font-size: 2.5vh;
   line-height: 40px;
+  position: absolute;
+  top:150px;
+  left:20px;
 }
 
 
