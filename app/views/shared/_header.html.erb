@@ -3,7 +3,7 @@
       <% if user_signed_in? %>
        <li>
        <%= "こんにちは、" %>
-       <%= link_to current_user.name, "#", class: "user-name" %>
+       <%= link_to current_user.name, edit_user_path(current_user), class: "user-name" %>
        <%= "さん" %>
         </li> 
        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout"  %> </li>

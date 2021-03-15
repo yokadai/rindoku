@@ -3,6 +3,7 @@
     <div class='account-page__inner--left account-page__header'>
       <h2>Edit Account</h2>
       <h5>アカウントの編集</h5>
+      <h5>※情報編集後は再度ログインしてください。</h5>
       <%= link_to "ログアウト", "#", class: 'btn'%>
       <%= link_to "チャットページに戻る", :back, class: 'btn'%>
     </div>
@@ -22,6 +23,14 @@
           </div>
           <div class='field-input'>
             <%= f.email_field :email%>
+          </div>
+          <div class="field">
+            <div class='field-label'>
+              <%= f.label :new_password %> 
+            </div>
+            <div class='field-input'>
+              <%= f.password_field :password %>
+            </div>
           </div>
         </div>
         <div class='actions'>
